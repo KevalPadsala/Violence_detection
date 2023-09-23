@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300&display=swap');
+   
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+background-color: rgb(244, 242, 242);
+}
+
+
+    h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+    .topac h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.topac h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #b80000;
+}
+.topac h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+
+
+    h2{
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+
+    div.vidstream {
+      display: inline-block;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.637), 0 6px 20px 0 rgba(0, 0, 0, 0.523);
+      margin-bottom: 25px;
+      margin-left: 31px;
+      margin-top: 25px;
+
+      text-align: center;
+      justify-content:center ;
+      padding-top: 2px;
+      padding-bottom: 8px;
+    }
+
+    div.contain {
+      
+      text-align: center;
+      justify-content:center ;
+      padding-top: 2px;
+      padding-bottom: 8px;
+    }
+
+    img {
+
+      width: 100%;
+    }
+
+
+    div.topac{
+      margin-top: 25px;
+      text-align: center;
+    justify-content: center;
+    }
+    span {
+    color: crimson;
+}
+
+div.conti{
+  display: flex;
+}
+
+div.brow{
+width: 420px;
+height: 200px;
+  margin: auto;
+  padding: 10px;
+     
+}
+
+.btn{
+  color: black;
+    background-color: white;
+    font-size: 20px;
+    display: inline-block;
+    border: 0px solid rgb(250, 249, 249);
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: rgba(255, 254, 254, 0.3) 1px 1px 1px 1px, rgba(29, 29, 29, 0.22) 1px 1px 1px 1px;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="topac">
+    <h1> <span> Suspicious </span>Activity detection</h1>
+  </div>
+
+<div class="conti">
+  
+  <div class="vidstream">
+    <strong><img src="{{ url_for('video') }}" /> </strong>
+    <h2>Live streaming</h2>
+  </div>
+
+  <div class="brow">
+    <form action="/action_page.php">
+      
+      <input class="btn" type="file" id="myfile" name="myfile"><br><br>
+      <input class="btn" type="submit">
+    </form>
+    
+  </div>
+</div> 
+  
+
+
+
+</body>
+
+</html>
